@@ -1,0 +1,73 @@
+[{
+        "nombre": "Conjunto Jess",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-1.jpg"
+    },
+    {
+        "nombre": "Conjunto Marilyn",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-2.jpg"
+    },
+    {
+        "nombre": "Conjunto Andorra",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-3.jpg"
+    },
+    {
+        "nombre": "Conjunto Pilar",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-4.jpg"
+    },
+    {
+        "nombre": "Conjunto Lizza",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-5.jpg"
+    },
+    {
+        "nombre": "Conjunto Sharon",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-6.jpg"
+    },
+    {
+        "nombre": "Conjunto Backtick",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-7.jpg"
+    },
+    {
+        "nombre": "Conjunto Dot",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-8.webp"
+    },
+    {
+        "nombre": "Conjunto Jireh",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-9.webp"
+    },
+    {
+        "nombre": "Conjunto Dana",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-10.webp"
+    },
+    {
+        "nombre": "Conjunto Wimbled",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-11.webp"
+    },
+    {
+        "nombre": "Conjunto Lady",
+        "precio": 199,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
+        "imagen": "../img/prod-12.jpg"
+    }
+]

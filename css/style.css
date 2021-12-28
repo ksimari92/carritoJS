@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/*  Header  */
+
+header {
+    margin-top: 1%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    border-bottom: gray 1px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 8em;
+    text-decoration: none;
+    color: gray;
+    font-weight: 400;
+}
+
+nav {
+    background-color: none !important;
+}
+
+.nav-menu li {
+    margin-right: 5rem !important;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.5);
+    transition: ease 1s;
+    text-decoration: underline gray;
+}
+
+
+/* Main */
+
+
+/* Seccion 1 - banner */
+
+.banner {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+
+/* Seccion 2 y 3 */
+
+.nueva-coleccion,
+.novias {
+    margin-top: 7%;
+}
+
+.nueva-coleccion h3,
+.novias h3 {
+    text-align: center;
+}
+
+.cont-img {
+    display: flex;
+}
+
+.cont-img img {
+    width: 22%;
+    margin: 1.5%;
+    border-radius: 10px;
+}
+
+.cont-img img:hover {
+    opacity: 75%;
+    box-shadow: 1px 3px 5px gray;
+    transition: ease 1s;
+}
+
+
+/*Seccion contacto*/
+
+.titulo-contacto {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.texto-contacto {
+    text-align: center;
+}
+
+.form {
+    margin-left: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-email {
+    margin-bottom: 3%;
+}
+
+.btn {
+    color: black;
+    background-color: blanchedalmond;
+    border: black 1px solid;
+    width: 35%;
+    margin-bottom: 5%;
+}
+
+
+/* PRODUCTOS*/
+
+.titulo-prod {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.cont-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto 0;
+    width: 100%;
+}
+
+.card {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info p {
+    text-align: center;
+}
+
+.btn-comprar {
+    color: black;
+    border: 1px solid grey;
+    background-color: blanchedalmond;
+    width: 50%;
+    border-radius: 5px;
+}
