@@ -139,7 +139,7 @@ nav {
 .cont-productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: auto 0;
     width: 100%;
 }
@@ -153,6 +153,12 @@ nav {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 1px 4px 4px grey;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: auto;
+    }
 }
 
 .card:hover {
