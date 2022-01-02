@@ -28,6 +28,10 @@ header {
     font-weight: 400;
 }
 
+.logo:hover {
+    color: rgb(190, 144, 233);
+}
+
 nav {
     background-color: none !important;
 }
@@ -40,6 +44,10 @@ nav {
     transform: scale(1.5);
     transition: ease 1s;
     text-decoration: underline gray;
+}
+
+.nav-menu li a:hover {
+    color: rgb(190, 144, 233) !important;
 }
 
 
@@ -115,6 +123,11 @@ nav {
     margin-bottom: 5%;
 }
 
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
 
 /* PRODUCTOS*/
 
@@ -134,11 +147,16 @@ nav {
 .card {
     width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     margin: 2%;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 1px 4px 4px grey;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .info {
@@ -153,9 +171,14 @@ nav {
 }
 
 .btn-comprar {
+    color: white;
+    background-color: black;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.btn-comprar:hover {
     color: black;
     border: 1px solid grey;
     background-color: blanchedalmond;
-    width: 50%;
-    border-radius: 5px;
 }
