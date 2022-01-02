@@ -26,36 +26,16 @@ async function dibujar() {
 dibujar();
 
 
-async function obtenerProductos(url) {
-    let datos = await fetch(url);
-    let productos = await datos.json();
+// async function obtenerProductos(url) {
+//     let datos = await fetch(url);
+//     let productos = await datos.json();
 
-    console.log(productos);
-    return productos;
-}
+//     console.log(productos);
+//     return productos;
+// }
 
-obtenerProductos(url);
+// obtenerProductos(url);
 
-function agregarAlCarrito() {
-    idProducto = e.target.attributes.dataId.nodeValue;
-    seleccionado = productos.find(el => el.id == idProducto);
-    productosSeleccionados.push(seleccionado);
+// function agregarAlCarrito() {
 
-    console.log(idProducto = e.target.attributes.dataId.nodeValue)
-    console.log(productosSeleccionados);
-
-    let storage = [];
-
-    if (!localStorage.getItem("productos")) {
-        storage.push(producto);
-        localStorage.setItem("productos", JSON.stringify(storage));
-    } else {
-        storage = JSON.parse(localStorage.getItem("productos"));
-        storage.push(producto);
-        localStorage.setItem("productos", JSON.stringify(storage));
-    }
-}
-
-for (let i = 1; i >= 12; i++) {
-    document.querySelectorAll(i).addEventListener("click", agregarAlCarrito)
-}
+// }
