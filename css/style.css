@@ -37,17 +37,31 @@ nav {
 }
 
 .nav-menu li {
-    margin-right: 5rem !important;
+    margin-right: 4rem !important;
 }
 
 .nav-menu li:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: ease 1s;
     text-decoration: underline gray;
 }
 
 .nav-menu li a:hover {
     color: rgb(190, 144, 233) !important;
+}
+
+#btn-total {
+    width: 7em;
+    font-size: small;
+}
+
+#btn-total:hover {
+    background-color: coral;
+    transform: none !important;
+}
+
+#btn-total img {
+    width: 25%;
 }
 
 
@@ -123,7 +137,7 @@ nav {
     margin-bottom: 5%;
 }
 
-.btn:hover {
+.btn-comprar:hover {
     color: white;
     background-color: black;
 }
@@ -134,6 +148,11 @@ nav {
 .titulo-prod {
     text-align: center;
     margin-top: 3%;
+}
+
+.titulo-cont {
+    display: flex;
+    justify-content: space-around;
 }
 
 .cont-productos {
@@ -158,6 +177,9 @@ nav {
 @media (max-width: 500px) {
     .card {
         width: auto;
+    }
+    .card:hover {
+        transform: scale(1.0);
     }
 }
 

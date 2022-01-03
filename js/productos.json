@@ -8,21 +8,21 @@
     {
         "id": 2,
         "nombre": "Conjunto Marilyn",
-        "precio": 199,
+        "precio": 300,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-2.jpg"
     },
     {
         "id": 3,
         "nombre": "Conjunto Andorra",
-        "precio": 199,
+        "precio": 100,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-3.jpg"
     },
     {
         "id": 4,
         "nombre": "Conjunto Pilar",
-        "precio": 199,
+        "precio": 850,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-4.jpg"
     },
@@ -36,21 +36,21 @@
     {
         "id": 6,
         "nombre": "Conjunto Sharon",
-        "precio": 199,
+        "precio": 459,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-6.jpg"
     },
     {
         "id": 7,
         "nombre": "Conjunto Backtick",
-        "precio": 199,
+        "precio": 380,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-7.jpg"
     },
     {
         "id": 8,
         "nombre": "Conjunto Dot",
-        "precio": 199,
+        "precio": 250,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-8.webp"
     },
@@ -64,7 +64,7 @@
     {
         "id": 10,
         "nombre": "Conjunto Dana",
-        "precio": 199,
+        "precio": 135,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-10.webp"
     },
@@ -78,7 +78,7 @@
     {
         "id": 12,
         "nombre": "Conjunto Lady",
-        "precio": 199,
+        "precio": 1500,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
         "imagen": "../img/prod-12.jpg"
     }
