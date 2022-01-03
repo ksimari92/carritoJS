@@ -6,7 +6,7 @@ let productosCarrito = [];
 
 const cargarDatos = async() => {
     try {
-        const res = await fetch('./js/productos.json');
+        const res = await fetch('productos.json');
         const data = await res.json();
         dibujar(data);
 
