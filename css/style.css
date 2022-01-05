@@ -51,17 +51,30 @@ nav {
 }
 
 #btn-total {
-    width: 7em;
+    width: 8em;
     font-size: small;
 }
 
 #btn-total:hover {
-    background-color: coral;
-    transform: none !important;
+    background-color: rgb(190, 144, 233);
+    border: none;
 }
 
 #btn-total img {
     width: 25%;
+}
+
+#btn-terminar {
+    width: 10rem;
+}
+
+#btn-terminar a {
+    text-decoration: none;
+    color: black;
+}
+
+.modal-footer>* {
+    margin: 1rem;
 }
 
 
