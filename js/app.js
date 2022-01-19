@@ -10,10 +10,12 @@ const cargarDatos = async() => {
         const data = await res.json();
         dibujar(data);
 
+
         return data;
     } catch (error) {
         console.log(error);
     }
+
 }
 
 //Pintar las cards de productos
@@ -37,15 +39,28 @@ async function dibujar(data) {
 //Agregar producto al carro 
 async function agregarProducto(comp) {
     let datos = await cargarDatos()
+    let storage = [];
 
     let id = comp.id;
 
     for (const data of datos) {
         if (id == data.id) {
-            // localStorage.setItem("producto", JSON.parse(data.nombre, data.precio));
+            console.log(data);
+
             productosCarrito.push(Number(data.precio));
             console.log(productosCarrito);
+
+            if (!localStorage.getItem("productos")) {
+                storage.push(data);
+                localStorage.setItem("productos", JSON.stringify(storage));
+            } else {
+                storage = JSON.parse(localStorage.getItem("productos"));
+                storage.push(data);
+                localStorage.setItem("productos", JSON.stringify(storage));
+            }
+
         }
+
     }
 
     document.getElementById("btn-total").innerHTML = ` <img src="img/shopping-cart_icon-icons.com_72552.png" alt="icono carrito"> U$D ` + sumaTotal(productosCarrito);
@@ -63,20 +78,31 @@ function sumaTotal(productosCarrito) {
     }
     console.log(totalPrecio)
 
+    localStorage.setItem("precioTotal", totalPrecio);
+
     return totalPrecio;
 }
 
+//Guardar en storage
+function agregarStorage(producto) {
+
+    if (!localStorage.getItem("productos")) {
+        storage.push(producto);
+        localStorage.setItem("productos", JSON.stringify(storage));
+    } else {
+        storage = JSON.parse(localStorage.getItem("productos"));
+        storage.push(producto);
+        localStorage.setItem("productos", JSON.stringify(storage));
+    }
+
+}
 //Vaciar carro
 function borrarCarrito() {
     productosCarrito = [];
     totalPrecio = 0;
+    localStorage.clear();
 }
 
-// function recuperarProductos() {
-//     let productosRecuperados = localStorage.getItem("producto");
-
-//     console.log(productosRecuperados)
-// }
 //LLAMADA DE FUNCIONES Y ASIGNACION DE EVENTOS
 
 cargarDatos();
@@ -89,3 +115,5 @@ document.getElementById("btn-borrar").addEventListener('click', () => {
     document.getElementById("btn-total").innerHTML = ` <img src="img/shopping-cart_icon-icons.com_72552.png" alt="icono carrito"> U$D ` + 0;
 
 });
+
+console.log(localStorage.getItem("productos"))
