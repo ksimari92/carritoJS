@@ -1,4 +1,6 @@
 let productos = document.getElementById("cont-productos");
+// let btnVaciar = document.getElementById('btn-vaciar');
+
 let productosCarrito = [];
 
 
@@ -100,6 +102,8 @@ function agregarStorage(producto) {
 function borrarCarrito() {
     productosCarrito = [];
     totalPrecio = 0;
+    totalCompra.innerHTML = `TOTAL = U$D 0`;
+    lista.innerHTML = ""
     localStorage.clear();
 }
 

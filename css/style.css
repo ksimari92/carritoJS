@@ -51,7 +51,7 @@ nav {
 }
 
 #btn-total {
-    width: 8em;
+    width: 10em;
     font-size: small;
 }
 
@@ -62,6 +62,13 @@ nav {
 
 #btn-total img {
     width: 25%;
+}
+
+.b-compra {
+    margin-top: 3%;
+    position: fixed;
+    right: 10%;
+    z-index: 2;
 }
 
 #btn-terminar {
@@ -189,10 +196,11 @@ nav {
 
 @media (max-width: 500px) {
     .card {
-        width: auto;
+        width: 70%;
+        margin-bottom: 5%;
     }
     .card:hover {
-        transform: scale(1.0);
+        transform: scale(0);
     }
 }
 
@@ -222,4 +230,59 @@ nav {
     color: black;
     border: 1px solid grey;
     background-color: blanchedalmond;
+}
+
+@media (max-width: 500px) {
+    .b-compra {
+        width: 7em !important;
+    }
+}
+
+
+/*TERMINAR COMPRA */
+
+#btn-vaciar {
+    width: 8em;
+    background: rgba(219, 126, 245, 0.4);
+}
+
+@media (max-width: 500px) {
+    #btn-vaciar {
+        width: 5em !important;
+        position: absolute;
+    }
+    .resume {
+        font-size: larger;
+        font-weight: bold;
+    }
+}
+
+main {
+    margin-top: 15%;
+    padding: 5%;
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    background: rgba(214, 88, 245, 0.4);
+}
+
+.resume {
+    text-align: center;
+}
+
+.item {
+    /* width: 80%; */
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.item p {
+    text-align: center;
+}
+
+#total {
+    margin-top: 4%;
 }

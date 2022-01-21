@@ -2,6 +2,7 @@ let compraFinal = []
 let total;
 let lista = document.getElementById('compra');
 let totalCompra = document.getElementById('total');
+let btnVaciar = document.getElementById('btn-vaciar');
 
 const recuperarObjetos = () => {
 
@@ -10,13 +11,17 @@ const recuperarObjetos = () => {
 
     for (let i = 0; i < compraFinal.length; i++) {
 
-        lista.innerHTML += `<li> Producto: ${compraFinal[i].nombre} </li>
-                              <li> Precio: U$D${compraFinal[i].precio} </li>
+        lista.innerHTML += `  <div class="item"> 
+                              <p>${compraFinal[i].nombre} U$D ${compraFinal[i].precio} </p>
+                              </div>
                               `
     }
 }
 
-totalCompra.innerHTML = `TOTAL = U$D ${ localStorage.getItem("precioTotal")}`
+total = localStorage.getItem("precioTotal");
+totalCompra.innerHTML = `TOTAL = U$D ${total}`
 recuperarObjetos()
 console.log(compraFinal)
 console.log(total)
+
+btnVaciar.addEventListener("click", borrarCarrito)
