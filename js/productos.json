@@ -3,83 +3,106 @@
         "nombre": "Conjunto Jess",
         "precio": 199,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-1.jpg"
+        "imagen": "img/prod-1.jpg",
+        "cantidad": 5
     },
     {
         "id": 2,
         "nombre": "Conjunto Marilyn",
         "precio": 300,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-2.jpg"
+        "imagen": "img/prod-2.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 3,
         "nombre": "Conjunto Andorra",
         "precio": 100,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-3.jpg"
+        "imagen": "img/prod-3.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 4,
         "nombre": "Conjunto Pilar",
         "precio": 850,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-4.jpg"
+        "imagen": "img/prod-4.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 5,
         "nombre": "Conjunto Lizza",
         "precio": 199,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-5.jpg"
+        "imagen": "img/prod-5.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 6,
         "nombre": "Conjunto Sharon",
         "precio": 459,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-6.jpg"
+        "imagen": "img/prod-6.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 7,
         "nombre": "Conjunto Backtick",
         "precio": 380,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-7.jpg"
+        "imagen": "img/prod-7.jpg",
+        "cantidad": 5
+
     },
     {
         "id": 8,
         "nombre": "Conjunto Dot",
         "precio": 250,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-8.webp"
+        "imagen": "img/prod-8.webp",
+        "cantidad": 5
+
     },
     {
         "id": 9,
         "nombre": "Conjunto Jireh",
         "precio": 199,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-9.webp"
+        "imagen": "img/prod-9.webp",
+        "cantidad": 5
+
     },
     {
         "id": 10,
         "nombre": "Conjunto Dana",
         "precio": 135,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-10.webp"
+        "imagen": "img/prod-10.webp",
+        "cantidad": 5
+
     },
     {
         "id": 11,
         "nombre": "Conjunto Wimbled",
         "precio": 199,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-11.webp"
+        "imagen": "img/prod-11.webp",
+        "cantidad": 5
+
     },
     {
         "id": 12,
         "nombre": "Conjunto Lady",
         "precio": 1500,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rerum!",
-        "imagen": "img/prod-12.jpg"
+        "imagen": "img/prod-12.jpg",
+        "cantidad": 5
+
     }
 ]

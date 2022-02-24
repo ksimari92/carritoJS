@@ -22,14 +22,14 @@ header {
 }
 
 .logo {
-    margin-left: 8em;
+    margin-left: 1em;
     text-decoration: none;
-    color: gray;
-    font-weight: 400;
+    color: rgb(190, 144, 233);
+    ;
 }
 
-.logo:hover {
-    color: rgb(190, 144, 233);
+.img-logo {
+    width: 70%;
 }
 
 nav {
@@ -50,8 +50,12 @@ nav {
     color: rgb(190, 144, 233) !important;
 }
 
+.mi-nav {
+    width: ;
+}
+
 #btn-total {
-    width: 10em;
+    width: 6em;
     font-size: small;
 }
 
@@ -61,14 +65,12 @@ nav {
 }
 
 #btn-total img {
-    width: 25%;
+    width: 1rem;
 }
 
 .b-compra {
-    margin-top: 3%;
-    position: fixed;
-    right: 10%;
-    z-index: 2;
+    margin-right: 2em;
+    margin-bottom: 0% !important;
 }
 
 #btn-terminar {
@@ -91,8 +93,7 @@ nav {
 /* Seccion 1 - banner */
 
 .banner {
-    margin-left: 10%;
-    margin-top: 20px;
+    width: 100%;
 }
 
 
@@ -199,13 +200,6 @@ nav {
         width: 70%;
         margin-bottom: 5%;
     }
-    .card:hover {
-        transform: scale(0);
-    }
-}
-
-.card:hover {
-    transform: scale(1.1);
 }
 
 .info {
@@ -259,13 +253,13 @@ nav {
 
 .miMain {
     margin-top: 15%;
+    margin-left: 15%;
     padding: 5%;
     height: auto;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10%;
     background: rgba(214, 88, 245, 0.4);
 }
 

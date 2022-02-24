@@ -18,10 +18,18 @@ const recuperarObjetos = () => {
     }
 }
 
+document.getElementById("btn-total").innerHTML = ` <img src="img/shopping-cart_icon-icons.com_72552.png" alt="icono carrito">  ` + localStorage.getItem('cantidadProductos');
+
+
 total = localStorage.getItem("precioTotal");
 totalCompra.innerHTML = `TOTAL = U$D ${total}`
 recuperarObjetos()
 console.log(compraFinal)
 console.log(total)
 
-btnVaciar.addEventListener("click", borrarCarrito)
+btnVaciar.addEventListener("click", () => {
+    localStorage.clear();
+    lista.innerHTML="";
+    totalCompra.innerHTML = `TOTAL = U$D 0`;
+
+})
