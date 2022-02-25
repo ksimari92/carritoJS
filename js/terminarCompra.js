@@ -31,5 +31,6 @@ btnVaciar.addEventListener("click", () => {
     localStorage.clear();
     lista.innerHTML="";
     totalCompra.innerHTML = `TOTAL = U$D 0`;
+    document.getElementById("btn-total").innerHTML = ` <img src="img/shopping-cart_icon-icons.com_72552.png" alt="icono carrito">`;
 
 })

@@ -4,6 +4,20 @@
     font-family: 'Inconsolata', monospace;
 }
 
+body {
+    color: #316B83;
+}
+
+
+/*BOTONES*/
+
+
+/* .btn-color {
+    background-color: #D5BFBF;
+    border: 1px solid #6D8299;
+    color: #6D8299;
+} */
+
 
 /*  Header  */
 
@@ -13,7 +27,7 @@ header {
     top: 0;
     z-index: 5;
     background-color: white;
-    border-bottom: gray 1px solid;
+    border-bottom: #6D8299 1px solid;
 }
 
 .navbar {
@@ -24,7 +38,7 @@ header {
 .logo {
     margin-left: 1em;
     text-decoration: none;
-    color: rgb(190, 144, 233);
+    color: #316B83;
     ;
 }
 
@@ -43,16 +57,17 @@ nav {
 .nav-menu li:hover {
     transform: scale(1.2);
     transition: ease 1s;
-    text-decoration: underline gray;
+    text-decoration: underline #316B83;
 }
 
 .nav-menu li a:hover {
-    color: rgb(190, 144, 233) !important;
+    color: #316B83;
 }
 
-.mi-nav {
+
+/* .mi-nav {
     width: ;
-}
+} */
 
 #btn-total {
     width: 6em;
@@ -60,7 +75,8 @@ nav {
 }
 
 #btn-total:hover {
-    background-color: rgb(190, 144, 233);
+    background-color: #8CA1A5;
+    color: #316B83;
     border: none;
 }
 
@@ -151,16 +167,17 @@ nav {
 }
 
 .btn {
-    color: black;
-    background-color: blanchedalmond;
-    border: black 1px solid;
+    color: #316B83;
+    background-color: #F3F0D7;
+    border: #6D8299 1px solid;
     width: 35%;
     margin-bottom: 5%;
 }
 
 .btn-comprar:hover {
-    color: white;
-    background-color: black;
+    color: #F3F0D7;
+    background-color: #6D8299;
+    ;
 }
 
 
@@ -169,6 +186,7 @@ nav {
 .titulo-prod {
     text-align: center;
     margin-top: 3%;
+    color: #316B83;
 }
 
 .titulo-cont {
@@ -192,7 +210,8 @@ nav {
     margin: 2%;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 1px 4px 4px grey;
+    box-shadow: 1px 2px 3px #316B83;
+    color: #316B83;
 }
 
 @media (max-width: 500px) {
@@ -214,16 +233,17 @@ nav {
 }
 
 .btn-comprar {
-    color: white;
-    background-color: black;
+    color: #6D8299;
+    background-color: #F3F0D7;
     width: 50%;
     border-radius: 5px;
+    border: 1px solid #316B83;
 }
 
 .btn-comprar:hover {
-    color: black;
-    border: 1px solid grey;
-    background-color: blanchedalmond;
+    color: #F3F0D7;
+    border: 1px solid #6D8299;
+    background-color: #316B83;
 }
 
 @media (max-width: 500px) {
@@ -235,9 +255,39 @@ nav {
 
 /*TERMINAR COMPRA */
 
+.terminar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #316B83;
+}
+
+.input-desc {
+    display: flex;
+    margin-top: 2%;
+}
+
+.input-desc>input {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.input-desc>button {
+    width: 30%;
+    font-size: smaller;
+    height: 30px;
+}
+
 #btn-vaciar {
     width: 8em;
-    background: rgba(219, 126, 245, 0.4);
+    background: #F3F0D7;
 }
 
 @media (max-width: 500px) {
@@ -252,15 +302,16 @@ nav {
 }
 
 .miMain {
-    margin-top: 15%;
-    margin-left: 15%;
-    padding: 5%;
+    margin-top: 3%;
+    padding: 3%;
     height: auto;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(214, 88, 245, 0.4);
+    background: #F3F0D7;
+    color: #316B83;
+    border: #316B83 1px solid;
 }
 
 .resume {
