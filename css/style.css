@@ -286,7 +286,8 @@ nav {
 }
 
 #btn-vaciar {
-    width: 8em;
+    width: 5em;
+    font-size: smaller;
     background: #F3F0D7;
 }
 
@@ -326,6 +327,7 @@ nav {
 
 .item p {
     text-align: center;
+    margin-bottom: 0;
 }
 
 #total {
