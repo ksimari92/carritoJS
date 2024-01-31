@@ -1,8 +1,10 @@
+
 let compraFinal = []
 let total;
 let lista = document.getElementById('compra');
 let totalCompra = document.getElementById('total');
 let btnVaciar = document.getElementById('btn-vaciar');
+let btnConfirmar = document.getElementById('btn-confirmar');
 
 const recuperarObjetos = () => {
 
@@ -32,6 +34,7 @@ btnVaciar.addEventListener("click", () => {
     localStorage.clear();
     localStorage.setItem('precioTotal', 0);
     lista.innerHTML = "";
+    descuento.innerHTML = ""
     totalCompra.innerHTML = `TOTAL = U$D ${localStorage.getItem("precioTotal")}`;
     document.getElementById("btn-total").innerHTML = ` <img src="img/shopping-cart_icon-icons.com_72552.png" alt="icono carrito">`;
 
@@ -45,23 +48,36 @@ let descuento = document.getElementById("total-descuento");
 const aplicarDescuento = (cupon) => {
     console.log("click descuento")
     console.log(cupon.value)
-    if(localStorage.getItem('precioTotal') < 0 || localStorage.getItem('precioTotal') == null){
+    if(localStorage.getItem('precioTotal') != 0 || localStorage.getItem('precioTotal') != null){
+        if (cupon.value === "UNDESCUENTO") {
+            total = localStorage.getItem('precioTotal') - (total * 0.1);
+            descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
+        } else if (cupon.value === "DOSDESCUENTO") {
+            total = localStorage.getItem('precioTotal') - (total * 0.15);
+            descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
+        } else if (cupon.value === "SUPERDESCUENTO") {
+            total = localStorage.getItem('precioTotal') - (total * 0.5);
+            descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
+        } else {
+            descuento.innerHTML = `<p style="color: red">¡LO SENTIMOS! EL CÓDIGO NO ES VÁLIDO</p>`
+        } 
+    }else{
         descuento.innerHTML= `<p style="color: red">¡DEBE SELECCIONAR ARTICULOS DE LA TIENDA!</p>`
     }
-    if (cupon.value === "UNDESCUENTO") {
-        total = localStorage.getItem('precioTotal') - (total * 0.1);
-        descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
-    } else if (cupon.value === "DOSDESCUENTO") {
-        total = localStorage.getItem('precioTotal') - (total * 0.15);
-        descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
-    } else if (cupon.value === "SUPERDESCUENTO") {
-        total = localStorage.getItem('precioTotal') - (total * 0.5);
-        descuento.innerHTML = `<br>  Su total con el descuento es ${total}`
-    } else {
-        descuento.innerHTML = `<p style="color: red">¡LO SENTIMOS! EL CÓDIGO NO ES VÁLIDO</p>`
-    }
+    
 }
 
 document.getElementById('descuento').addEventListener("click", function () {
     aplicarDescuento(cupon)
 });
+
+
+//CONFIRMAR COMPRA
+btnConfirmar.addEventListener("click", () => {
+    Swal.fire("¡Su compra se realizo con exito!")
+
+    setTimeout(()=>{
+        location.href = "./index.html"
+
+    }, 2000)
+})
